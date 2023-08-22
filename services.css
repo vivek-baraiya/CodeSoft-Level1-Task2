@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: rgb(7, 7, 131);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(7, 7, 100);
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover {
+    color: rgb(236, 125, 34);
+    font-size: 1.07rem;
+  }
+  .footer ul {
+    list-style: none;
+  }
+   .footer-rights {
+    text-align: center;
+    color: rgb(236, 125, 34);
+    padding: 12px 0;
+  }
+  .left {
+    font-size: 1.5rem;
+  }
+  *{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  :root{
+    --primery-color:#fd562a;
+    --secondary-color:rgba(255,255,255,.4);
+  }
+  #service-section{
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #service-section h2{
+    color:rgb(236, 125, 34);;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  #service-section h3{
+    color:rgb(236, 125, 34);;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  #service-section h2::after{
+    position: absolute;
+    content: " ";
+    top:80px;
+    left:-30px;
+    height: 0px;
+    width: 0px;
+    border-radius: 20px solid white;
+    border-left: 20px solid var(--primery-color);
+  }
+  #service-section h2::before{
+    position: absolute;
+    content: " ";
+    top:80px;
+    right:-30px;
+    height: 0px;
+    width: 0px;
+    border-radius: 20px solid transparent;
+    border-right: 20px solid var(--primery-color);
+  }
+  #service-section #paragraph{
+    width: 40%;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: 1px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1 fr);
+    gap: 10px;
+    z-index: 15;
+    margin-top: 20px;
+  }
+  
+  .cards .card1 {
+    height: 288px;
+    width: 380px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 8%;
+    background: rgb(44, 43, 139);
+    position: relative;
+  }
+  .cards .card1::before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    border-radius: 10px;
+    background: #fd562a;
+    transform: rotate(0 deg);
+    z-index: -1;
+  }
+  .cards .card1:hover .caed1::before{
+    transform: rotate(10 deg);
+
+  }
+  .cards .card1 i{
+    font-size: 2.5rem;
+  }
